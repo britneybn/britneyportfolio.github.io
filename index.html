@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Technical Sales & Customer Success Portfolio</title>
+    <!-- Tailwind CSS CDN for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js CDN for the interactive dashboard -->
+    <script src="https://cdn.jsdelivr.net"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="font-bold text-xl tracking-tight">YN<span class="text-blue-600">.</span></span>
+            <div class="space-x-6 text-sm font-medium">
+                <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <a href="#dashboard" class="hover:text-blue-600 transition">Metrics</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+                <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="gradient-bg text-white py-24 px-6">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-3/5">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+                    Closing Deals with <span class="text-blue-400">Code</span> & <span class="text-blue-400">Strategy</span>.
+                </h1>
+                <p class="text-lg text-gray-300 mb-8 max-w-lg">
+                    Computer Science student and experienced Sales Closer. I bridge the gap between technical products and high-impact revenue growth.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#dashboard" class="bg-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">View My Pipeline</a>
+                    <a href="YOUR_LOOM_LINK_HERE" class="border border-white/20 bg-white/5 px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition">Watch Intro Video</a>
+                </div>
+            </div>
+            <!-- Video Placeholder -->
+            <div class="md:w-1/3 mt-12 md:mt-0 flex justify-center">
+                <div class="relative w-64 h-64 rounded-full border-4 border-blue-500/30 p-2">
+                    <div class="w-full h-full rounded-full bg-gray-800 flex items-center justify-center overflow-hidden">
+                        <!-- Replace with your photo or a Loom GIF -->
+                        <span class="text-gray-500 text-4xl">👋</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About / Skills Section -->
+    <section id="about" class="py-20 px-6 max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16">
+            <div>
+                <h2 class="text-2xl font-bold mb-6 flex items-center">
+                    <span class="w-8 h-1 bg-blue-600 mr-3"></span> Professional Summary
+                </h2>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    As a CS student, I bring a logical, data-driven approach to sales. My background at <strong>Centerfield Jamaica</strong> (AT&T Account) taught me the "grit" of high-volume closing, where I consistently beat quotas by 15%.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    I am a self-starter who pioneered lead generation in new US territories, using my technical skills to filter data and map out unpenetrated markets. Whether working solo or in a team, I adapt quickly to new tech stacks and customer needs.
+                </p>
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold mb-6">Technical Sales Stack</h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                        <h4 class="font-bold text-blue-600">CRMs</h4>
+                        <p class="text-sm text-gray-500">Salesforce, Zendesk</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                        <h4 class="font-bold text-blue-600">Analytics</h4>
+                        <p class="text-sm text-gray-500">MS Excel, Chart.js</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                        <h4 class="font-bold text-blue-600">Automation</h4>
+                        <p class="text-sm text-gray-500">HubSpot Workflows</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                        <h4 class="font-bold text-blue-600">Languages</h4>
+                        <p class="text-sm text-gray-500">HTML, CSS, JS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="py-20 bg-white border-y border-gray-100">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Interactive Sales Pipeline</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">This dashboard visualizes my typical sales funnel efficiency. I built this using Chart.js to demonstrate my ability to analyze and report on sales data.</p>
+            </div>
+            
+            <div class="bg-gray-50 p-8 rounded-3xl border border-gray-200 shadow-inner">
+                <div class="max-w-3xl mx-auto">
+                    <canvas id="pipelineChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 text-center">
+                <div>
+                    <div class="text-3xl font-bold text-blue-600">15%</div>
+                    <div class="text-sm text-gray-500 uppercase tracking-widest mt-1">Above Quota</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-blue-600">95%+</div>
+                    <div class="text-sm text-gray-500 uppercase tracking-widest mt-1">Compliance</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-blue-600">45+</div>
+                    <div class="text-sm text-gray-500 uppercase tracking-widest mt-1">Daily Calls</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-blue-600">8%</div>
+                    <div class="text-sm text-gray-500 uppercase tracking-widest mt-1">Conversion</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies / Projects -->
+    <section id="projects" class="py-20 px-6 max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12">Key Case Studies</h2>
+        
+        <div class="space-y-12">
+            <!-- Project 1 -->
+            <div class="group bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/3">
+                        <span class="text-blue-600 font-bold text-sm uppercase tracking-widest">Outbound Lead Gen</span>
+                        <h3 class="text-xl font-bold mt-2">Pioneering Untapped US Territories</h3>
+                    </div>
+                    <div class="md:w-2/3">
+                        <p class="text-gray-600 mb-4">
+                            <strong>Challenge:</strong> An overseas client needed to find leads in states where they had no presence. 
+                        </p>
+                        <p class="text-gray-600 mb-4">
+                            <strong>Action:</strong> I independently researched and filtered massive datasets in Excel, identifying target businesses based on specific industry codes. I then executed a 3-step cold email sequence.
+                        </p>
+                        <p class="text-blue-600 font-semibold">Result: Successfully mapped out 5 new territories and increased qualified pipeline by 20%.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="group bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/3">
+                        <span class="text-blue-600 font-bold text-sm uppercase tracking-widest">Customer Success</span>
+                        <h3 class="text-xl font-bold mt-2">Forex Enrollment & Support</h3>
+                    </div>
+                    <div class="md:w-2/3">
+                        <p class="text-gray-600 mb-4">
+                            <strong>Challenge:</strong> Managing high-volume student inquiries for an online educational platform using Zendesk.
+                        </p>
+                        <p class="text-gray-600 mb-4">
+                            <strong>Action:</strong> Set up automated ticket routing and response templates to handle technical and billing FAQs efficiently.
+                        </p>
+                        <p class="text-blue-600 font-semibold">Result: Maintained a resolution time of under 4 hours for priority tickets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="py-20 bg-gray-900 text-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Verified Certifications</h2>
+            <div class="flex flex-wrap justify-center gap-8 opacity-80">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-white/10 rounded-xl flex items-center justify-center mb-3 mx-auto">☁️</div>
+                    <p class="text-xs uppercase font-bold tracking-widest">HubSpot Inbound</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-white/10 rounded-xl flex items-center justify-center mb-3 mx-auto">📊</div>
+                    <p class="text-xs uppercase font-bold tracking-widest">Sales Software</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-white/10 rounded-xl flex items-center justify-center mb-3 mx-auto">🚀</div>
+                    <p class="text-xs uppercase font-bold tracking-widest">Salesforce Admin</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="py-12 px-6 border-t border-gray-200">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+            <p>&copy; 2026 Your Name. Built with HTML, Tailwind, and Grit.</p>
+            <div class="flex gap-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-blue-600 transition">LinkedIn</a>
+                <a href="#" class="hover:text-blue-600 transition">GitHub</a>
+                <a href="mailto:your@email.com" class="hover:text-blue-600 transition">your@email.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script for the Chart -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('pipelineChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['New Leads Found', 'Outbound Contact', 'Qualified Ops', 'Negotiation', 'Closed Won'],
+                    datasets: [{
+                        label: 'Funnel Volume',
+                        data: [500, 310, 140, 65, 32],
+                        backgroundColor: [
+                            'rgba(30, 41, 59, 0.1)',
+                            'rgba(30, 41, 59, 0.2)',
+                            'rgba(30, 41, 59, 0.4)',
+                            'rgba(37, 99, 235, 0.7)',
+                            'rgba(37, 99, 235, 1)'
+                        ],
+                        borderRadius: 10,
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: { 
+                            beginAtZero: true,
+                            grid: { display: false },
+                            ticks: { display: false }
+                        },
+                        x: {
+                            grid: { display: false }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
