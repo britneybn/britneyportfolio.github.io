@@ -2,7 +2,7 @@
 
 A lightweight, data-driven personal portfolio website designed to showcase a unique blend of technical expertise (Computer Science) and high-volume outbound sales and support skills. 
 
-🚀 **Live Demo:** [Link to your GitHub Pages URL here]
+🚀 **Live Demo:** https://britneybn.github.io/britneyportfolio.github.io
 
 ## 🛠️ Tech Stack & Architecture
 
