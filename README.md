@@ -28,6 +28,4 @@ The layout is optimized for scannability, immediately segmenting my experience i
 ### 3. Integrated Video Pitch
 Includes an asynchronous media block built for embedding video introductions (e.g., Loom), allowing remote recruitment teams to quickly evaluate phone/video presence and client communication style.
 
-## 🚀 Deployment Instructions
-
 
